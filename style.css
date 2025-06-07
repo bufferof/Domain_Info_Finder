@@ -1,0 +1,157 @@
+*{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:aliceblue;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+
+    color: #4169E1;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(11, 11, 11);
+    scroll-behavior: smooth;        
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#domain_form {
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 15px;
+}
+
+#domain_input {
+    padding: 5px;
+    font-size: large;
+    color: black;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+
+    width: 700px;
+    height: 40px;
+}
+
+#domain_input:focus {
+    outline: none;    
+    box-shadow: none;    
+}
+
+#domain_submit {
+    font-size: large;
+
+    border-radius: 5px;
+    border: 2px solid #4670ef;
+
+    font-weight: bold;
+
+    background-color: #4169E1;
+    width:100px;
+}
+
+#domain_submit:hover {
+    border: 2px solid #2d55ce;
+}
+
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+
+  scrollbar-width: none;
+}
+
+#container::-webkit-scrollbar {
+  display: none;    
+}
+
+#infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap; 
+
+    width: 1800px;
+    align-items: flex-start;
+}
+
+.info-boxes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 15px;
+    padding-right: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+
+    width: fit-content;
+    min-width: 200px;
+    white-space: nowrap;
+
+    height: 120px;
+}
+
+.info-boxes h2,
+.info-boxes h3 {
+    margin: 15px 0; /* 상하 여백만 5px로 줄임 */
+}
+
+.info-boxes h3 {
+    color: #4169E1;
+}
+
+#returning {
+    font-size: large;
+
+    border-radius: 3px;
+    border: 2px solid #4670ef;
+
+    font-weight: bold;
+
+    background-color: #4169E1;
+    width:150px;
+    height: 50px;
+
+    margin-top: 50px;
+}
